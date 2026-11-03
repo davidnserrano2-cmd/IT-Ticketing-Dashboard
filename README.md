@@ -1,4 +1,8 @@
-# IT Ticketing Dashboard
+# IT Ticketing & Automation — Learning Project
+
+I started this project out of curiosity about **n8n** and how workflow automation works.
+I used an IT support scenario to explore triggers, branching, PostgreSQL queries,
+Gmail notifications, and scheduled reporting, then added a dashboard to inspect the results.
 
 A local, read-only IT service dashboard built with **FastAPI, PostgreSQL 16,
 Jinja2, Bootstrap, and Chart.js**. Existing **n8n + Gmail** workflows handle
@@ -80,8 +84,19 @@ bounded pagination are implemented.
 reader login is not user login. Keep the app on loopback; it is not ready for public
 hosting. Workflow screenshots show structure, not verification of every branch or
 concurrent-update correctness. Original workflow exports and a database schema
-installer are not included. Earlier design diagrams and private/test captures are
-excluded from this release. Next steps: authentication and a standalone demo dataset.
+installer are not included. The revised diagrams are checked against the current schema and MVP workflow structure;
+private/test captures needing corrections remain excluded. Next steps: authentication and a standalone demo dataset.
+
+## Case study and design
+
+- [Why I built it, what I explored, and completion scope](docs/CASE_STUDY.md)
+- [Six revised diagrams with editable draw.io sources](Diagrams/README.md)
+- [Current architecture](Diagrams/03_System_Architecture.svg)
+- [Verified database ERD](Diagrams/01_Database_ERD.svg)
+
+The local learning MVP is complete. The diagrams include FastAPI, Gmail reporting,
+correct history fields, and the five allowed status values; they do not assert an
+enforced transition matrix, delivery retries, or a production authentication system.
 
 ## More screenshots
 
@@ -109,3 +124,4 @@ notification, and confirmation/conflict branches. Email lookup is not authentica
 </details>
 
 [David N. Serrano — portfolio](https://davidnserrano2-cmd.github.io/)
+

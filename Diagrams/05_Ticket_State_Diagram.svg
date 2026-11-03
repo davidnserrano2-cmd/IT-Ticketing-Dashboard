@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="930" viewBox="0 0 1400 930" role="img" aria-labelledby="title desc">
+<title id="title">05 / Ticket status model</title><desc id="desc">Allowed values verified in PostgreSQL. Example lifecycle, not an enforced transition matrix.</desc>
+<defs><marker id="arrow" markerWidth="9" markerHeight="9" refX="8" refY="4.5" orient="auto"><path d="M0 0 L9 4.5 L0 9Z" fill="#087e78"/></marker></defs>
+<rect width="1400" height="930" fill="#f7faf9"/>
+<text x="50" y="64.0" font-family="Segoe UI,Arial,sans-serif" font-size="30" font-weight="700" fill="#193440" text-anchor="start">05 / Ticket status model</text>
+<text x="50" y="102.0" font-family="Segoe UI,Arial,sans-serif" font-size="16" font-weight="400" fill="#526975" text-anchor="start">Allowed values verified in PostgreSQL. Example lifecycle, not an enforced transition matrix.</text>
+<rect x="60" y="210" width="230" height="115" rx="10" fill="#ffffff" stroke="#b8ccc8" stroke-width="1.5"/>
+<text x="175.0" y="256.85" font-family="Segoe UI,Arial,sans-serif" font-size="18" font-weight="700" fill="#193440" text-anchor="middle">New request</text>
+<text x="175.0" y="289.15" font-family="Segoe UI,Arial,sans-serif" font-size="16" font-weight="400" fill="#526975" text-anchor="middle">Ticket creation</text>
+<rect x="390" y="210" width="230" height="115" rx="10" fill="#edf2f7" stroke="#b8ccc8" stroke-width="1.5"/>
+<text x="505.0" y="273.35" font-family="Segoe UI,Arial,sans-serif" font-size="18" font-weight="700" fill="#193440" text-anchor="middle">Open</text>
+<rect x="740" y="210" width="230" height="115" rx="10" fill="#fff4dc" stroke="#b8ccc8" stroke-width="1.5"/>
+<text x="855.0" y="273.35" font-family="Segoe UI,Arial,sans-serif" font-size="18" font-weight="700" fill="#193440" text-anchor="middle">In Progress</text>
+<rect x="1090" y="210" width="250" height="115" rx="10" fill="#e8f3ef" stroke="#b8ccc8" stroke-width="1.5"/>
+<text x="1215.0" y="273.35" font-family="Segoe UI,Arial,sans-serif" font-size="18" font-weight="700" fill="#193440" text-anchor="middle">Resolved</text>
+<polyline points="290,268 390,268" fill="none" stroke="#087e78" stroke-width="2" stroke-linejoin="round"  marker-end="url(#arrow)"/>
+<rect x="297" y="230" width="86" height="28" rx="3" fill="#f7faf9"/>
+<text x="340.0" y="246.0" font-family="Segoe UI,Arial,sans-serif" font-size="14" font-weight="400" fill="#526975" text-anchor="middle">create</text>
+<polyline points="620,268 740,268" fill="none" stroke="#087e78" stroke-width="2" stroke-linejoin="round"  marker-end="url(#arrow)"/>
+<rect x="622" y="214" width="116" height="28" rx="3" fill="#f7faf9"/>
+<text x="680.0" y="230.0" font-family="Segoe UI,Arial,sans-serif" font-size="14" font-weight="400" fill="#526975" text-anchor="middle">example update</text>
+<polyline points="970,268 1090,268" fill="none" stroke="#087e78" stroke-width="2" stroke-linejoin="round"  marker-end="url(#arrow)"/>
+<rect x="972" y="214" width="116" height="28" rx="3" fill="#f7faf9"/>
+<text x="1030.0" y="230.0" font-family="Segoe UI,Arial,sans-serif" font-size="14" font-weight="400" fill="#526975" text-anchor="middle">example update</text>
+<rect x="240" y="440" width="920" height="270" rx="10" fill="#ffffff" stroke="#b8ccc8" stroke-width="1.5"/>
+<text x="700.0" y="580.85" font-family="Segoe UI,Arial,sans-serif" font-size="18" font-weight="700" fill="#193440" text-anchor="middle"></text>
+<text x="700.0" y="485.0" font-family="Segoe UI,Arial,sans-serif" font-size="20" font-weight="700" fill="#193440" text-anchor="middle">Additional values allowed by the database</text>
+<text x="700.0" y="527.0" font-family="Segoe UI,Arial,sans-serif" font-size="17" font-weight="400" fill="#526975" text-anchor="middle">Closed and Cancelled are accepted by the status CHECK constraint.</text>
+<text x="700.0" y="549.95" font-family="Segoe UI,Arial,sans-serif" font-size="17" font-weight="400" fill="#526975" text-anchor="middle">They are listed as supported values, not claimed here as demonstrated paths.</text>
+<rect x="420" y="600" width="220" height="70" rx="10" fill="#edf2f7" stroke="#b8ccc8" stroke-width="1.5"/>
+<text x="530.0" y="640.85" font-family="Segoe UI,Arial,sans-serif" font-size="18" font-weight="700" fill="#193440" text-anchor="middle">Closed</text>
+<rect x="760" y="600" width="220" height="70" rx="10" fill="#edf2f7" stroke="#b8ccc8" stroke-width="1.5"/>
+<text x="870.0" y="640.85" font-family="Segoe UI,Arial,sans-serif" font-size="18" font-weight="700" fill="#193440" text-anchor="middle">Cancelled</text>
+<rect x="50" y="770" width="1300" height="132" rx="10" fill="#e8f3ef" stroke="#b8ccc8" stroke-width="1.5"/>
+<text x="700.0" y="802.025" font-family="Segoe UI,Arial,sans-serif" font-size="17" font-weight="700" fill="#193440" text-anchor="middle">Scope and interpretation</text>
+<text x="700.0" y="833.975" font-family="Segoe UI,Arial,sans-serif" font-size="16" font-weight="400" fill="#526975" text-anchor="middle">The database CHECK constraint validates status names, not transition order.</text>
+<text x="700.0" y="855.575" font-family="Segoe UI,Arial,sans-serif" font-size="16" font-weight="400" fill="#526975" text-anchor="middle">Transitions, reopening rules, and actor permissions depend on workflow logic.</text>
+<text x="700.0" y="877.1750000000001" font-family="Segoe UI,Arial,sans-serif" font-size="16" font-weight="400" fill="#526975" text-anchor="middle">The dashboard displays state and history; it performs no status updates.</text>
+</svg>
