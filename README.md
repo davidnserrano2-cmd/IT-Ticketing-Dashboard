@@ -4,6 +4,8 @@ A local, read-only IT service dashboard built with **FastAPI, PostgreSQL 16,
 Jinja2, Bootstrap, and Chart.js**. Existing **n8n + Gmail** workflows handle
 employee submissions, technician updates, notifications, and daily reports.
 
+![Dashboard overview](Screenshots/TIcketOverview.png)
+
 ## What it does
 
 - Displays ticket KPIs and status/priority charts.
@@ -81,8 +83,29 @@ concurrent-update correctness. Original workflow exports and a database schema
 installer are not included. Earlier design diagrams and private/test captures are
 excluded from this release. Next steps: authentication and a standalone demo dataset.
 
-## Screenshots
+## More screenshots
 
-Selected dashboard and workflow screenshots are pending a separate public-release review.
+<details>
+<summary>Ticket browsing and automation workflows</summary>
+
+**Ticket browsing:** search and status/priority controls (shown unfiltered).
+
+![Ticket list](Screenshots/BrowseTickets.png)
+
+**Employee submission:** validation, priority assignment, ticket/history creation,
+Gmail confirmation, and a form confirmation step.
+
+![Employee submission workflow](Screenshots/IT-Ticketing_Employee_Submission_workflow.png)
+
+**Technician updates:** technician lookup, ticket checks, status/history updates,
+notification, and confirmation/conflict branches. Email lookup is not authentication.
+
+![Technician workflow](Screenshots/IT_Ticketing_Technician_Updates_Workflow.png)
+
+**Daily reporting:** scheduled statistics query and Gmail report delivery step.
+
+![Daily reporting workflow](Screenshots/IT_Ticketing_Daily_Operations_Report_Workflow.png)
+
+</details>
 
 [David N. Serrano — portfolio](https://davidnserrano2-cmd.github.io/)
